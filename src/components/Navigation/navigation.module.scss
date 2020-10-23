@@ -2,19 +2,56 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 0.7rem;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      height: 1px;
+      background-color: transparent;
+      width: 0;
+    }
+    &:hover,
+    &:active {
+      &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: blue;
+        transition: all 0.2s;
+        width: 100%;
+      }
+    }
   }
+
   a {
     text-decoration: none;
+    &:visited {
+      color: black;
+    }
   }
+
+  @media (min-width: 550px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    li {
+      margin-right: 0.9rem;
+    }
+  }
+
   @media (min-width: 850px) {
     flex-direction: row;
     justify-content: flex-start;
     li {
       margin-right: 1rem;
+      font-size: 1.1rem;
     }
   }
 }

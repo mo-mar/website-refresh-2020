@@ -2,5 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 
 export default function About() {
-  return <Layout headerText="About me"></Layout>
+  return (
+    <Layout headerText="About me">
+      <p>Hello.</p>
+    </Layout>
+  )
 }

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+
+// Font variables
+
+$main-font: 'Lora', serif;
+$secondary-font: 'Merriweather', serif;
+
 html {
   box-sizing: border-box;
 }
@@ -25,6 +32,7 @@ html {
 
 body {
   margin: 0;
+  font-family: $secondary-font;
 }
 
 /**
@@ -43,6 +51,15 @@ main {
 h1 {
   font-size: 3rem;
   margin: 0.67rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
 }
 
 /* Grouping content
