@@ -18,10 +18,14 @@ export default function Header(props) {
   return (
     <header className={classes.header}>
       <h1>
-        <span style={{ color: '#2f6cb1' }}>{firstWordCharacter}</span>
+        <span style={{ color: `${props.letterColour}` }}>
+          {firstWordCharacter}
+        </span>
         <span>{restOfFirstWord}</span>
         <br></br>
-        <span style={{ color: '#2f6cb1' }}>{secondWordCharacter}</span>
+        <span style={{ color: `${props.letterColour}` }}>
+          {secondWordCharacter}
+        </span>
         <span>{restOfSecondWord}</span>
       </h1>
       <Navigation />

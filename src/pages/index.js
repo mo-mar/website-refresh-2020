@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 export default function Home() {
   return (
-    <Layout headerText="Mohamed Omar">
+    <Layout headerText="Mohamed Omar" letterColour="#2f6cb1">
       <p>What a world.</p>
 
       <img src="https://source.unsplash.com/random/400x200" alt="" />
