@@ -5,7 +5,7 @@
   text-align: center;
   border: 1px solid grey;
   border-radius: 5px 5px;
-  padding: 0.6rem;
+  padding: 1rem;
   transform: scale(1);
   transition: all 0.2s;
   .imageContainer {
@@ -14,8 +14,22 @@
       max-width: 400px;
     }
   }
+  .portfolioBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s;
+  }
+  svg {
+    font-size: 2rem;
+    transition: all 0.2s;
+    transform: rotate(0);
+    &:hover {
+      transform: rotate(-20deg);
+    }
   }
 }
