@@ -1,0 +1,15 @@
+.intro {
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1.5rem;
+  @media (min-width: 750px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
