@@ -10,7 +10,7 @@ export default function Home() {
         <title>Mohamed Omar | Front-end developer</title>
         <link rel="canonical" href="http://thatmohamedomar.com" />
       </Helmet>
-      <Layout headerText="Mohamed Omar" letterColour="#2f6cb1">
+      <Layout headerText="Mohamed Omar" letterColour="#599684">
         <p>What a world.</p>
 
         <img src="https://source.unsplash.com/random/400x200" alt="" />

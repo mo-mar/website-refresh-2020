@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
+import { Helmet } from 'react-helmet'
 import * as classes from './portfolio.module.scss'
 import whosMyRepImage from '../assets/whos-my-rep-screenshot.png'
 import kanbanBoardImage from '../assets/kanban-board.png'
@@ -42,34 +43,41 @@ const myWebsite = {
 
 export default function Portfolio() {
   return (
-    <Layout headerText="Recent work">
-      <div className={classes.intro}>
-        <p>
-          I do my best to frequently build new apps and websites to learn new
-          technologies and keep my tools sharp.{' '}
-        </p>
-        <p>
-          Some of them will land here, some of them won't. They can't all be
-          bangers.
-        </p>
-        <p>
-          Feel free to check out my Github profile if you want{' '}
-          <a
-            href="https://github.com/mo-mar"
-            rel="noopener noreferrer nofollow"
-            target=" _blank"
-          >
-            a peek
-          </a>{' '}
-          behind the curtain.
-        </p>
-      </div>
-      <div className={classes.portfolioGrid}>
-        <PortfolioPiece portfolioPieceData={whosMyRep} />
-        <PortfolioPiece portfolioPieceData={kanbanBoard} />
-        <PortfolioPiece portfolioPieceData={weatherApp} />
-        <PortfolioPiece portfolioPieceData={myWebsite} />
-      </div>
-    </Layout>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Mohamed Omar | Front-end developer</title>
+        <link rel="canonical" href="http://thatmohamedomar.com" />
+      </Helmet>
+      <Layout headerText="Recent work">
+        <div className={classes.intro}>
+          <p>
+            I do my best to frequently build new apps and websites to learn new
+            technologies and keep my tools sharp.{' '}
+          </p>
+          <p>
+            Some of them will land here, some of them won't. They can't all be
+            bangers.
+          </p>
+          <p>
+            Feel free to check out my GitHub profile if you want{' '}
+            <a
+              href="https://github.com/mo-mar"
+              rel="noopener noreferrer nofollow"
+              target=" _blank"
+            >
+              a peek
+            </a>{' '}
+            behind the curtain.
+          </p>
+        </div>
+        <div className={classes.portfolioGrid}>
+          <PortfolioPiece portfolioPieceData={whosMyRep} />
+          <PortfolioPiece portfolioPieceData={kanbanBoard} />
+          <PortfolioPiece portfolioPieceData={weatherApp} />
+          <PortfolioPiece portfolioPieceData={myWebsite} />
+        </div>
+      </Layout>
+    </>
   )
 }
