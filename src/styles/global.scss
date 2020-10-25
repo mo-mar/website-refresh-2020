@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:ital,wght@0,300;0,700;1,400&display=swap');
+
+// Font variables
+
+$main-font: 'Lora', serif;
+$secondary-font: 'Merriweather', serif;
+
 html {
-  line-height: 1.15;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+//  Note: the two styles above are not part of the original normalize.css
+
+html {
+  line-height: 1.25;
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
 }
@@ -13,6 +32,7 @@ html {
 
 body {
   margin: 0;
+  font-family: $secondary-font;
 }
 
 /**
@@ -29,8 +49,17 @@ main {
  */
 
 h1 {
-  font-size: 3em;
-  margin: 0.67em 0;
+  font-size: 3rem;
+  margin: 0.67rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
 }
 
 /* Grouping content
@@ -54,7 +83,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /* Text-level semantics
@@ -97,7 +126,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /**
@@ -122,11 +151,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
 /* Embedded content
@@ -220,7 +249,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0.35rem 0.75rem 0.625rem;
 }
 
 /**

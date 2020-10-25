@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/normalize.scss'
+import Layout from '../components/Layout/Layout'
 
 export default function Home() {
   return (
-    <div style={{ color: `purple` }}>
-      <h1>Hello Gatsby!</h1>
+    <Layout headerText="Mohamed Omar" letterColour="#2f6cb1">
       <p>What a world.</p>
+
       <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    </Layout>
   )
 }
