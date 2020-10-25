@@ -42,8 +42,11 @@ export default function Portfolio() {
       <div className={classes.intro}>
         <p>
           I do my best to frequently build new apps and websites to learn new
-          technologies and keep my tools sharp. Some of them will land here,
-          some of them won't. They can't all be bangers.
+          technologies and keep my tools sharp.{' '}
+        </p>
+        <p>
+          Some of them will land here, some of them won't. They can't all be
+          bangers.
         </p>
         <p>
           Feel free to check out my Github profile if you want{' '}
