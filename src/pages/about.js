@@ -1,5 +1,6 @@
 import React from 'react'
 import * as classes from './about.module.scss'
+import headshot from '../assets/mohamed-omar-headshot-square-crop.jpg'
 import Layout from '../components/Layout/Layout'
 
 export default function About() {
@@ -34,10 +35,7 @@ export default function About() {
           </div>
         </div>
         <div className={classes.headshot}>
-          <img
-            src="../assets/mohamed-omar-headshot-square-crop.jpg"
-            alt="Mohamed Omar photograph"
-          />
+          <img src={headshot} alt="Mohamed Omar photograph" />
         </div>
       </div>
     </Layout>

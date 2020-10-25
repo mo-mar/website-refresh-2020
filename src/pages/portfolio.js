@@ -1,12 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
 import * as classes from './portfolio.module.scss'
+import whosMyRepImage from '../assets/whos-my-rep-screenshot.png'
+import kanbanBoardImage from '../assets/kanban-board.png'
+import myWebsiteImage from '../assets/website-screenshot.png'
+import weatherAppImage from '../assets/weather-app.png'
 import PortfolioPiece from '../components/PortfolioPiece/PortfolioPiece'
 
 const whosMyRep = {
   name: `Who's My Rep?`,
   link: 'https://mo-mar.github.io/mohamedOmarProjectFive/',
-  image: '../../assets/whos-my-rep-screenshot.png',
+  image: whosMyRepImage,
   description: `A single-page app that connects Canadians with their municipal, provincial and federal political representatives. All data pulled in from the Open North API.`,
   githubLink: 'https://github.com/mo-mar/mohamedOmarProjectFive',
 }
@@ -14,7 +18,7 @@ const whosMyRep = {
 const kanbanBoard = {
   name: 'Kanban Board',
   link: 'https://the-kanban-board.netlify.app/',
-  image: '../../assets/kanban-board.png',
+  image: kanbanBoardImage,
   description:
     'A simple Kanban Board built with React and React Beautiful DnD.',
   githubLink: 'https://github.com/mo-mar/kanban-board',
@@ -23,7 +27,7 @@ const kanbanBoard = {
 const weatherApp = {
   name: 'My Generic Weather App',
   link: 'https://mo-mar.github.io/weather-app/',
-  image: '../../assets/weather-app.png',
+  image: weatherAppImage,
   description: `It's a weather app. Does it reinvent the wheel? No. Was it a great way to practice React hooks? You betcha.`,
   githubLink: 'https://github.com/mo-mar/weather-app',
 }
@@ -31,7 +35,7 @@ const weatherApp = {
 const myWebsite = {
   name: 'This very website',
   link: null,
-  image: '../../assets/website-screenshot.png',
+  image: myWebsiteImage,
   description: `My personal website and blog were built with Gatsby.js, SASS and CSS modules, which is a bit of an upgrade from the plain HTML page I made last year!`,
   githubLink: 'https://github.com/mo-mar/website-refresh-2020',
 }
