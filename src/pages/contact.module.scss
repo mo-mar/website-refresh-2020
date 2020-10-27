@@ -6,6 +6,9 @@
   a {
     text-decoration: none;
     color: black;
+    &:hover {
+      color: rgb(89, 150, 132);
+    }
   }
 }
 
@@ -13,6 +16,7 @@
   margin-top: 1rem;
   svg {
     font-size: 1.2rem;
+    position: relative;
     margin-right: 0.5rem;
     color: #1da1f2;
   }

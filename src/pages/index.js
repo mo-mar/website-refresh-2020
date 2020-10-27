@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
 import { Helmet } from 'react-helmet'
+import * as classes from './index.module.scss'
 
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
         <link rel="canonical" href="http://thatmohamedomar.com" />
       </Helmet>
       <Layout headerText="Mohamed Omar" letterColour="#599684">
-        <h2>Hello!/!مرحبا</h2>
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+        <div className={classes.container}>
+          <h2>Hello!/!مرحبا</h2>
+          <p>I'm Mo</p>
+        </div>
       </Layout>
     </>
   )
