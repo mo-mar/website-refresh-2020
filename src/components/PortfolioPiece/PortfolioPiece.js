@@ -1,7 +1,7 @@
 import React from 'react'
 import * as classes from './portfoliopiece.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 export default function PortfolioPiece({ portfolioPieceData }) {
   return (
     <div className={classes.container}>
@@ -10,7 +10,6 @@ export default function PortfolioPiece({ portfolioPieceData }) {
         <div className={classes.imageContainer}>
           <a
             href={portfolioPieceData.link}
-            target="_blank"
             rel="noopener noreferrer nofollow"
             target=" _blank"
           >
