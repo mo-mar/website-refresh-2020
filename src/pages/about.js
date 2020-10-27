@@ -16,7 +16,6 @@ export default function About() {
         <div className={classes.container}>
           <div className="bio">
             <div className={classes.bioIntro}>
-              <h3>Hello!/!مرحبا </h3>
               <p>I'm Mohamed, or Mo, or محمد. </p>
               <p>
                 I'm a front-end developer based in Toronto who, at the time of

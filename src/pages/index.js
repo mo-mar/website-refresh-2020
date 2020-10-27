@@ -11,8 +11,7 @@ export default function Home() {
         <link rel="canonical" href="http://thatmohamedomar.com" />
       </Helmet>
       <Layout headerText="Mohamed Omar" letterColour="#599684">
-        <p>What a world.</p>
-
+        <h2>Hello!/!مرحبا</h2>
         <img src="https://source.unsplash.com/random/400x200" alt="" />
       </Layout>
     </>
