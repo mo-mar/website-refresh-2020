@@ -12,7 +12,7 @@ const whosMyRep = {
   name: `Who's My Rep?`,
   link: 'https://mo-mar.github.io/mohamedOmarProjectFive/',
   image: whosMyRepImage,
-  description: `A single-page app that connects Canadians with their municipal, provincial and federal political representatives. All data pulled in from the Open North API.`,
+  description: `A single-page app that connects Canadians with their municipal, provincial and federal political representatives. Built with React.`,
   githubLink: 'https://github.com/mo-mar/mohamedOmarProjectFive',
 }
 
@@ -68,7 +68,8 @@ export default function Portfolio() {
             >
               a peek
             </a>{' '}
-            behind the curtain.
+            behind the curtain (and promise you won't judge all the abandoned
+            repos.)
           </p>
         </div>
         <div className={classes.portfolioGrid}>

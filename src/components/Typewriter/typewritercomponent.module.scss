@@ -1,6 +1,8 @@
 .container {
-  border: 1px solid black;
-  padding: 1rem;
+  // border: 1px solid black;
+  box-shadow: 0 7px 5px hsla(0, 0%, 0%, 0.2);
+  border-left: 4px solid rgb(89, 150, 132);
+  padding: 1.5rem;
   font-size: 1.4rem;
   margin-top: 4rem;
   @media (min-width: 550px) {
