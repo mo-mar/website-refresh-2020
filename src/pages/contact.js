@@ -13,7 +13,7 @@ export default function contact() {
         <title>Mohamed Omar | Front-end developer</title>
         <link rel="canonical" href="https://thatmohamedomar.com" />
       </Helmet>
-      <Layout headerText="Contact">
+      <Layout headerText="Contact me">
         <div className={classes.container}>
           <div className={classes.iconContainer}>
             <FontAwesomeIcon icon={faEnvelope} />

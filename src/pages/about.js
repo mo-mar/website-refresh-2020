@@ -22,14 +22,17 @@ export default function About() {
                 writing, still gets giddy when a line of code makes the computer
                 or browser do something.
               </p>
+              <p>
+                (For example: That ... elaborate ... introduction on the home
+                page? That brings me <em>endless joy.</em>)
+              </p>
             </div>
             <div className={classes.bioBody}>
               <p>
-                Before I caught JavaScript fever, I worked in journalism and
-                online content creation. I got to talk to and write about all
-                kinds of people doing all kinds of important, fascinating,
-                hilarious, stupid and scary things. (I'll never forget the guy
-                who{' '}
+                Before I caught web dev fever, I worked in journalism and online
+                content creation. I got to talk to and write about all kinds of
+                people doing all kinds of important, fascinating, hilarious,
+                stupid and scary things. (I'll never forget the guy who{' '}
                 <a
                   href="https://www.huffingtonpost.ca/2016/07/05/rick-nelson-bear-puncher_n_10820386.html"
                   rel="noopener noreferrer nofollow"
@@ -38,6 +41,14 @@ export default function About() {
                   punched a bear
                 </a>
                 . Good times.)
+              </p>
+              <p>
+                I'm a graduate of HackerYou in Toronto (now called Juno College)
+                and work with JavaScript primarily, both at work and for my side
+                projects. I'm also a proud holder (receiver? recipient?) of a
+                Bachelor of Journalism degree from Ryerson University, where I
+                definitely attended classes and did not spend the majority of my
+                time at the campus newspaper, The Eyeopener.
               </p>
             </div>
           </div>

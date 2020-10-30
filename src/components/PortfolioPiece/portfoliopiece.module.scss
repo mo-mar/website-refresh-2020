@@ -5,7 +5,7 @@
   text-align: center;
   border-radius: 5px 5px;
   box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-  padding: 1rem;
+  padding: 0.7rem;
   transform: scale(1);
   transition: all 0.2s;
   .imageContainer {
@@ -31,5 +31,9 @@
     &:hover {
       transform: rotate(-20deg);
     }
+  }
+  a,
+  a:visited {
+    color: black;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import { Helmet } from 'react-helmet'
 import * as classes from './index.module.scss'
-
+import TypewriterComponent from '../components/Typewriter/TypewriterComponent'
 export default function Home() {
   return (
     <>
@@ -13,8 +13,7 @@ export default function Home() {
       </Helmet>
       <Layout headerText="Mohamed Omar" letterColour="#599684">
         <div className={classes.container}>
-          <h2>Hello!/!مرحبا</h2>
-          <p>I'm Mo</p>
+          <TypewriterComponent />
         </div>
       </Layout>
     </>
