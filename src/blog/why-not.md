@@ -11,8 +11,8 @@ This is a revelation, because about 550 days ago when I walked into a web develo
 
 But here we are, and I guess I have a blog now.
 
-I don't really have anything grand planned for it. I geniunely enjoy writing (for people and for computers.) and I just wanted a big box to throw words in.
+I don't really have anything grand planned for it. I geniunely enjoy writing (for people and for computers) and I just wanted a big box to throw words in.
 
 If you end up reading a few, some or many of these words, thank you!
 
-If you don't, well, technically it's too late. Thank you!
+If you don't, technically it's too late. Thank you!

@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout'
 import { Helmet } from 'react-helmet'
 import * as classes from './index.module.scss'
 import TypewriterComponent from '../components/Typewriter/TypewriterComponent'
+
 export default function Home() {
   return (
     <>
