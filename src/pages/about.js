@@ -23,8 +23,15 @@ export default function About() {
                 or browser do something.
               </p>
               <p>
-                (For example: That ... elaborate ... introduction on the home
-                page? That brings me <em>endless joy.</em>)
+                I'm a graduate of HackerYou in Toronto (now called{' '}
+                <a href="https://junocollege.com/" target="_blank">
+                  Juno College
+                </a>
+                ) and work with JavaScript primarily, both at work and for my
+                side projects. I'm also a proud holder (receiver? recipient?) of
+                a Bachelor of Journalism degree from Ryerson University, where I
+                definitely attended classes and did not spend the majority of my
+                time at the campus newspaper, The Eyeopener.
               </p>
             </div>
             <div className={classes.bioBody}>
@@ -41,14 +48,6 @@ export default function About() {
                   punched a bear
                 </a>
                 . Good times.)
-              </p>
-              <p>
-                I'm a graduate of HackerYou in Toronto (now called Juno College)
-                and work with JavaScript primarily, both at work and for my side
-                projects. I'm also a proud holder (receiver? recipient?) of a
-                Bachelor of Journalism degree from Ryerson University, where I
-                definitely attended classes and did not spend the majority of my
-                time at the campus newspaper, The Eyeopener.
               </p>
             </div>
           </div>

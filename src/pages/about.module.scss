@@ -4,6 +4,11 @@
   grid-template-rows: 1fr auto;
   text-align: center;
 
+  a,
+  a:visited {
+    color: #7349c1;
+  }
+
   .headshot {
     grid-row: 1;
     margin-bottom: 1rem;

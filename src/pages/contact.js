@@ -17,15 +17,13 @@ export default function contact() {
         <div className={classes.container}>
           <div className={classes.iconContainer}>
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>
-              <a
-                href="mailto:hello@thatmohamedomar.com"
-                rel="noopener noreferrer nofollow"
-                target=" _blank"
-              >
-                hello@thatmohamedomar.com
-              </a>
-            </span>
+            <a
+              href="mailto:hello@thatmohamedomar.com"
+              rel="noopener noreferrer nofollow"
+              target=" _blank"
+            >
+              hello@thatmohamedomar.com
+            </a>
           </div>
           <div className={classes.iconContainer}>
             <FontAwesomeIcon icon={faTwitter} />
