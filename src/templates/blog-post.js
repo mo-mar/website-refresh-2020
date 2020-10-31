@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
         <title>Mohamed Omar | {data.markdownRemark.frontmatter.title}</title>
         <link rel="canonical" href="https://thatmohamedomar.com/blog" />
       </Helmet>
-      <Layout headerText="Blog Post">
+      <Layout headerText="The Blog">
         <div className={classes.container}>
           <h2>{data.markdownRemark.frontmatter.title}</h2>
           <h3>{data.markdownRemark.frontmatter.date}</h3>
