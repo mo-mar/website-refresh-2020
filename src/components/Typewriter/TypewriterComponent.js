@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import Typewriter from 'typewriter-effect/dist/core'
 import * as classes from './typewritercomponent.module.scss'
 let strings = [
-  'Hello!/!مرحبا',
+  'Hello!',
   `I'm Mohamed`,
   `I'm a front-end developer`,
   'I live in Toronto',
