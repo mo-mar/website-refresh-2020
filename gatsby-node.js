@@ -1,10 +1,11 @@
+const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constants')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require(`path`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `blog/` })
+    const slug = createFilePath({ node, getNode, basePath: `./src/blog` })
     createNodeField({
       node,
       name: `slug`,
@@ -30,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
+      path: `${node.fields.slug}`,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         slug: node.fields.slug,

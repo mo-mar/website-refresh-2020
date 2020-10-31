@@ -15,7 +15,9 @@ export default function Navigation() {
         <li>
           <Link to="/portfolio">Recent work</Link>
         </li>
-        <li>Blog</li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
