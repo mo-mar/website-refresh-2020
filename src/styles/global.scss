@@ -4,6 +4,7 @@
 
 $main-font: 'Lora', serif;
 $secondary-font: 'Merriweather', serif;
+$main-color: rgb(89, 150, 132);
 
 html {
   box-sizing: border-box;
@@ -93,8 +94,11 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 
-a {
+a,
+a:visited {
   background-color: transparent;
+  color: $main-color;
+  text-decoration: none;
 }
 
 /**
