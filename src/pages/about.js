@@ -10,7 +10,7 @@ export default function About() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Mohamed Omar | Front-end developer</title>
-        <link rel="canonical" href="http://thatmohamedomar.com" />
+        <link rel="canonical" href="https://thatmohamedomar.com" />
       </Helmet>
       <Layout headerText="About me">
         <div className={classes.container}>
