@@ -24,7 +24,11 @@ export default function About() {
               </p>
               <p>
                 I'm a graduate of HackerYou in Toronto (now called{' '}
-                <a href="https://junocollege.com/" target="_blank">
+                <a
+                  href="https://junocollege.com/"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
+                >
                   Juno College
                 </a>
                 ) and work with JavaScript primarily, both at work and for my
