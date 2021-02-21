@@ -10,7 +10,7 @@ import PortfolioPiece from '../components/PortfolioPiece/PortfolioPiece'
 
 const whosMyRep = {
   name: `Who's My Rep?`,
-  link: 'https://kind-wing-103843.netlify.app/',
+  link: 'https://whos-my-rep.netlify.app/',
   image: whosMyRepImage,
   description: `A single-page app that connects Canadians with their municipal, provincial and federal political representatives. Built with React.`,
   githubLink: 'https://github.com/mo-mar/whos-my-rep-v2',
