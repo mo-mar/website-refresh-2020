@@ -57,13 +57,13 @@ These are good questions, but they definitely prolonged the project, and over ti
 
 Allow me to illustrate just how naive I was in 2019. Here is the first day in the commit history for that project:
 
-![First commit](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/34d5cc19-a13d-4bf5-8cf5-d5ec3bb7f692/firstcommit.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210320%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210320T222128Z&X-Amz-Expires=86400&X-Amz-Signature=4c6547d955fd148ea2db01aef7b5c9c5aef8b8ff3928e7739e34e2f3e5980a5a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22firstcommit.jpg%22)
+![First commit](../../assets/blog/whos-my-rep-rebuild/firstcommit.jpeg)
 
 Look at that hard worker. "Getting started with input functionality." "Need to get API call working." You did get it to work, past me. You totally did!
 
 Now look at this fascinating update in the commit logs not even a week later.
 
-![Final commit](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83883c84-9818-4cac-9fa2-26900c22fd59/finalcommit.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210320%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210320T222143Z&X-Amz-Expires=86400&X-Amz-Signature=3204758334d6c9b735b86467f592542579be3b98c98831c586930cfaddd8e53c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22finalcommit.jpg%22)
+![Final commit](../../assets/blog/whos-my-rep-rebuild/finalcommit.jpeg)
 
 **OH YEAH. FINAL COMMIT. WE'RE DONE HERE. SHIP IT.**
 
