@@ -30,7 +30,7 @@ const foods = [
 foods.filter(food => food.type === vegetable)
 ```
 
-If I want to print “I am a responsible adult who likes eating vegetables” to the console — you gotta motivate yourself somehow — for every vegetable in my foods array, I know that I can reach for `forEach`.
+If I want to print “I am a responsible adult who definitely eats vegetables” to the console — what? you don't do this? — for every vegetable in my foods array, I know that I can reach for `forEach`.
 
 ```javascript
 foods.forEach(food => console.log("I am a good boy for eating vegetables")
@@ -46,19 +46,21 @@ You get the picture.
 
 But not all array methods are created equal.
 
-Case in point: `reduce()`, my arch nemesis. When I first learned about this method in bootcamp, it was the first time I genuinely felt like JavaScript might not be for me.
+Case in point: `reduce()`, my archnemesis.
 
-`reduce()` didn't have any immediate use cases, and so I was less motivated to learn how it worked.
+I distinctly remember learning about `reduce()` in bootcamp back in 2019. It felt like someone had just cranked up a difficulty slider.
 
-In fact, I’ve yet to come across a real life scenario that begged for this method, so I've never spent though I’m sure there _are_ scenarios where it would be the perfect choice. I just haven’t gotten to them.
+I found it less straightforward than its array method siblings, and it also didn't have any immediate use cases, so I was less motivated to learn how it worked.
 
-So now, in hopes of conquering my demons, I am going to (superficially) understand `reduce()` once and for all.
+Even my instructor said something along the lines of "this one is confusing, don't expect to use it much." (He was right on both counts.)
 
-Let’s start with the first paragraph describing `reduce()` on MDN:
+But it's been bugging me ever since. So now, in hopes of conquering this JavaScript ghost of my past, I am going to (superficially) understand `reduce()` once and for all.
+
+Let’s start with the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" noopener target="_blank">`reduce()` docs on MDN:</a>
 
 > The reduce() method executes a user-supplied “reducer” callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 
-....
+<em>\* has flashbacks to 2019 \*</em>
 
 Like the array methods mentioned above, `reduce()` invokes a callback method on each element in an array.
 
@@ -68,11 +70,11 @@ The reducer expects two positional arguments: an “accumulator” and the curre
 
 > passing in the return value from the calculation on the preceding element
 
-As Jeff Delaney describes it in [this video from Fireship](https://www.youtube.com/watch?v=tVCYa_bnITg&ab_channel=Fireship) — which is an excellent learning resource, by the way — this makes `reduce()` a “loop with a memory.”
+As Jeff Delaney describes it in <a href="https://www.youtube.com/watch?v=tVCYa_bnITg&ab_channel=Fireship" noopener target="_blank">this video from Fireship</a> — which is an excellent learning resource, by the way — this makes `reduce()` a “loop with a memory.”
 
 Every run of the loop ends with a single returned value. This is the “accumulator,” and it gets passed into the callback function for the next run of the loop.
 
-A great (and widespread) example of reduce’s functionality is to _add_ elements in an array. (_Reduce_ to _add?_ Yes, I’m confused, too.)
+A great (and widespread) example of reduce’s functionality is to _add_ elements in an array. (_Reducing_ to _add_ hurts my head.)
 
 Say we have an array of vegetables:
 
@@ -84,10 +86,10 @@ And then, say, we wanted to combine the names of these vegetables to create one 
 
 We can _reduce_ all the vegetables into one value using `reduce()`. To do that, we need to pass in the aforementioned reducer function, and an initial (optional) value.
 
-> 💡 This initial value slightly alters the behaviour of reduce. If we pass it in, it becomes the first “accumulator” in the very first run of the loop. The first item in our array will become the currentValue.
-> If we omit it, the “accumulator” is the first item in our array, and the currentValue is the 2nd item in the array.
+> 💡 This initial value slightly alters the behaviour of reduce. If we pass it in, it becomes the first “accumulator” in the very first run of the loop while the first item in our array becomes the currentValue.
+> If we omit it, the “accumulator” is the first item in our array, while the currentValue is the 2nd item in the array.
 
-Let’s first write the reducer function that just slaps together two strings.
+Let’s first write a function that just slaps two strings together.
 
 ```jsx
 const vegetableReducer = (previousVegetable, currentVegetable) =>
@@ -113,11 +115,11 @@ vegetableReducer('lettuce', 'cabbage')
 
 Here’s where the magic starts: The first run of the loop returns `previousVegetable` + `currentVegetable`, which is “lettucecabbage.”
 
-(OK, now I see how silly this example is.)
+(OK, I just realized how ridiculous this example is. Moving on.)
 
 ###Run 2:
 
-“lettucecabbage” has become the accumulator. The current vegetable is “potato”.
+“lettucecabbage” has become the accumulator. The current vegetable is “potato”. That is an incredible sentence, no matter how I read it.
 
 `vegetableReducer` is now run with the following arguments:
 
@@ -125,7 +127,7 @@ Here’s where the magic starts: The first run of the loop returns `previousVege
 vegetableReducer('lettucecabbage', 'potato')
 ```
 
-According to the laws of this twisted form of vegetable science we’ve just invented, the returned value from this run of the loop is “lettucecabbagepotato.”
+According to this twisted vegetable science we’ve just invented, the returned value from this run of the loop is “lettucecabbagepotato.”
 
 We’ve now reached the last run of the loop. Our final value is “broccoli.”
 
@@ -135,12 +137,14 @@ For the last time, `vegetableReducer` gets called with these arguments:
 vegetableReducer('lettucecabbagepotato', 'broccoli')
 ```
 
-And the end result is our glorious, vitamin-loaded frankenveggie, `lettucecabbagepotatobroccoli`.
+And the end result is our glorious frankenveggie, `lettucecabbagepotatobroccoli`.
 
 Bon appétit.
 
 Now that I’ve gone through this mental exercise and written about it, I realize two very important things:
 
-1. Reduce’s name makes a lot more sense when I think of it as a giant pot. You throw in a bunch of stuff and it reduces them into one value. The pot, in this elaborate example, is the reducer function.
+1. Reduce’s name makes a lot more sense when I think of it in food terms. It's like a giant pot. You throw in a bunch of stuff, and it reduces them into one value.
 
-2. I could go for some veggies right now
+2. This very well could be the first time the word `lettucecabbagepotatobroccoli` is seen on the internet.
+
+I now understand what `reduce()` does, and we've made internet culinary history.
