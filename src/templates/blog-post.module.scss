@@ -1,9 +1,11 @@
 .container {
   width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .postBody {
-  width: 80%;
+  width: 100%;
 }
 
 a,

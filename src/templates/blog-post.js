@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import * as classes from './blog-post.module.scss'
 
 export default function BlogPost({ data }) {
-  console.log(data)
   return (
     <>
       <Helmet>

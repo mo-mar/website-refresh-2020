@@ -22,7 +22,9 @@ export default function BlogPage({ data }) {
 
 export const data = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date, frontmatter___title], order: ASC }
+    ) {
       edges {
         node {
           fields {

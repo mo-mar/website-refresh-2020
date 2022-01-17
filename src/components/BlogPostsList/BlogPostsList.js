@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import * as classes from './blog-posts-list.module.scss'
+
 export default function BlogPostsList({ posts }) {
   return (
     <ul className={classes.container}>
