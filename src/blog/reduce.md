@@ -33,7 +33,7 @@ foods.filter(food => food.type === vegetable)
 If I want to print “I am a responsible adult who definitely eats vegetables” to the console — what? you don't do this? — for every vegetable in my foods array, I know that I can reach for `forEach`.
 
 ```javascript
-foods.forEach(food => console.log("I am a good boy for eating vegetables")
+foods.forEach(food => console.log("I am a responsible adult who definitely eats vegetables")
 ```
 
 Lastly, If I want to check if some item in my array meets a certain condition, I use `some`.
@@ -64,9 +64,11 @@ Let’s start with the <a href="https://developer.mozilla.org/en-US/docs/Web/Jav
 
 Like the array methods mentioned above, `reduce()` invokes a callback method on each element in an array.
 
-But in this case, the callback function gets a bit more fancy with its arguments.
+But in this case, the callback — or "reducer" — gets a bit more fancy with its arguments.
 
-The reducer expects two positional arguments: an “accumulator” and the current value. It’s the former that gives the method its special sauce, which is:
+It expects two positional arguments: an “accumulator” and the current value.
+
+It’s the former that gives `reduce()` its secret weapon, which is:
 
 > passing in the return value from the calculation on the preceding element
 
@@ -74,7 +76,7 @@ As Jeff Delaney describes it in <a href="https://www.youtube.com/watch?v=tVCYa_b
 
 Every run of the loop ends with a single returned value. This is the “accumulator,” and it gets passed into the callback function for the next run of the loop.
 
-A great (and widespread) example of reduce’s functionality is to _add_ elements in an array. (_Reducing_ to _add_ hurts my head.)
+A great (and widespread) example of reduce’s functionality is to _add_ elements in an array. (_Reducing_ to _add_ hurt my head, but it eventually clicked.)
 
 Say we have an array of vegetables:
 
@@ -82,9 +84,9 @@ Say we have an array of vegetables:
 const veggies = ['lettuce', 'cabbage', 'potato', 'broccoli']
 ```
 
-And then, say, we wanted to combine the names of these vegetables to create one super vegetable — one that, hypothetically, I could eat once a year to absolve myself of having to eat more vegetables.
+And then, say, we wanted to combine the names of these vegetables to create one super vegetable — one that doesn't go bad in a sad corner of my fridge.
 
-We can _reduce_ all the vegetables into one value using `reduce()`. To do that, we need to pass in the aforementioned reducer function, and an initial (optional) value.
+We can _reduce_ all the vegetables in our array into one value using `reduce()`. To do that, we need to pass in the aforementioned reducer function, and an initial (optional) value.
 
 > 💡 This initial value slightly alters the behaviour of reduce. If we pass it in, it becomes the first “accumulator” in the very first run of the loop while the first item in our array becomes the currentValue.
 > If we omit it, the “accumulator” is the first item in our array, while the currentValue is the 2nd item in the array.
@@ -129,6 +131,8 @@ vegetableReducer('lettucecabbage', 'potato')
 
 According to this twisted vegetable science we’ve just invented, the returned value from this run of the loop is “lettucecabbagepotato.”
 
+###Final run
+
 We’ve now reached the last run of the loop. Our final value is “broccoli.”
 
 For the last time, `vegetableReducer` gets called with these arguments:
@@ -143,8 +147,8 @@ Bon appétit.
 
 Now that I’ve gone through this mental exercise and written about it, I realize two very important things:
 
-1. Reduce’s name makes a lot more sense when I think of it in food terms. It's like a giant pot. You throw in a bunch of stuff, and it reduces them into one value.
+1. Reduce’s name makes a lot more sense when I think of it in food terms. It's like a giant pot. You throw in a bunch of stuff, and it reduces them into one value. What the pot does is what you define in your reducer function.
 
 2. This very well could be the first time the word `lettucecabbagepotatobroccoli` is seen on the internet.
 
-I now understand what `reduce()` does, and we've made internet culinary history.
+What a day. I now understand what `reduce()` does, and we've made internet culinary history.
