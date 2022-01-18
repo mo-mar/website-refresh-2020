@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <footer>
-      <p>Mohamed Omar © 2021</p>
+      <p>Mohamed Omar © 2022</p>
       <div className={classes.icons}>
         <a
           href="https://twitter.com/ThatMohamedOmar"
